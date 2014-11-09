@@ -1,5 +1,9 @@
 package edu.cmu.capstone.polaris.entity;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import edu.cmu.capstone.polaris.view.Views;
+
 /**
  * This class only contains customer basic information for inqury, 
  * without any contact info.
@@ -7,7 +11,10 @@ package edu.cmu.capstone.polaris.entity;
  *
  */
 public class Customer extends GeneralCustomer{
+	
+	 @JsonView(Views.PublicView.class)
 	private String partyID;
+	 @JsonView(Views.ExtendedPublicView.class)
 	private String partyType;
 	
 	//must have

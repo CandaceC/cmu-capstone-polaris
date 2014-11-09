@@ -7,7 +7,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/customers")
 public class CustomerInquery {
-	
+	/*
 	@GET
 	@Path("/{id}/phone")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -27,5 +27,5 @@ public class CustomerInquery {
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public CustomerComplete getAllContactInfo(){
-	}
+	}*/
 }
